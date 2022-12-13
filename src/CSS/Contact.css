@@ -1,0 +1,54 @@
+.contact{
+    width:100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    padding-right:3vw;
+    padding-bottom:3vw;
+}
+
+h2{
+    color: white;
+    font-weight: 800;
+    font-size: 1.3em;
+    margin: 0;
+}
+p{
+    color: white;
+    font-weight: 400;
+    font-size: 1.3em;
+    margin: 0;
+}
+
+p:hover{
+    color: lightgreen;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.contact-header{
+    font-size: 2em;
+    font-weight: 800;
+    color: white;
+    text-transform:uppercase;
+}
+
+.contact-card{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 25vw;
+    height: 45vh;
+    padding:2em;
+}
+
+.contact-box{
+    color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 25vw;
+    height: 45vh;
+    padding:2em;
+}

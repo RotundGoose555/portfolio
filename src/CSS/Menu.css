@@ -1,0 +1,30 @@
+.menu{
+    color:rgb(255, 250, 243);
+    background-color: black;
+    display: flexbox;
+    flex-direction: column;
+    height: 100vh;
+    min-width: 25em;
+    text-align: left;
+    padding-left: 2em;
+    font-size: 1em;
+    box-shadow: 5px,5px, ;
+
+}
+
+.menuButton{
+    background-color: transparent;
+    color:rgb(255, 250, 243);
+    border: 0;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.menuButton:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
