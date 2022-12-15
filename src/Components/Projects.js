@@ -140,7 +140,7 @@ export const Projects =[
             './Assets/stupid1.png',
             '',
             '',
-            './Assets/stupid4.png',
+            './Assets/stupid3.png',
             './Assets/stupid5.png',
             './Assets/stupid6.png',
         ],
