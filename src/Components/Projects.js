@@ -80,7 +80,7 @@ export const Projects =[
     },
     {
         id:3,
-        name:  "Personas",
+        name:  "Pathways",
         description:[
             {
                 title:'context',
@@ -105,8 +105,8 @@ export const Projects =[
             './Assets/pathways1.png',
             '',
             './Assets/pathways3.png',
-            './Assets/pathways4.png',
             './Assets/pathways5.png',
+            './Assets/pathways4.png',
             '',
             './Assets/pathways7.png',
         ],
