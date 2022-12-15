@@ -144,6 +144,7 @@ export const Projects =[
             './Assets/stupid5.png',
             './Assets/stupid6.png',
         ],
+        link:'',
     
     }
 ]
