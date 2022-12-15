@@ -5,13 +5,23 @@ function ProjectInfo(props) {
     function ButtonBar(){
 
         if(props.project.description[props.counter].title === "reflections"){
-            return(
-            <div className='info-buttons'>
-            {console.log('hello')}
-            <button className='info-button' disabled={props.counter===0} onClick={()=>props.setCounter(props.counter-1)}>◀︎</button>
-            <a  className='info-project-button' href={props.project.link} target='_blank' rel='noopener noreferrer'>SEE THE PROJECT</a>
-            </div>
-            )
+            if(props.project.link === ""){
+                return(
+                    <div className='info-buttons'>
+                    {console.log('hello')}
+                    <button className='info-button' disabled={props.counter===0} onClick={()=>props.setCounter(props.counter-1)}>◀︎</button>
+                    </div>
+                    )
+            }else{
+                return(
+                    <div className='info-buttons'>
+                    {console.log('hello')}
+                    <button className='info-button' disabled={props.counter===0} onClick={()=>props.setCounter(props.counter-1)}>◀︎</button>
+                    <a  className='info-project-button' href={props.project.link} target='_blank' rel='noopener noreferrer'>SEE THE PROJECT</a>
+                    </div>
+                    )
+            }
+
 
         }else{
             return(
@@ -22,6 +32,7 @@ function ProjectInfo(props) {
             )
         }
     }
+
 
     function TopBar(){
         return(
