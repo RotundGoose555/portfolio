@@ -5,11 +5,20 @@ import ProjectInfo from './ProjectInfo';
 
 function MyWork() {
     const [project, setProject] = useState(Projects[0])
+    const [counter, setCounter] = useState(0);
     const [url, setUrl] = useState('')
+    var prev = null;
 
     const handleClick = event =>{
-        document.getElementById(event.currentTarget.id).style.textDecoration='underline';
+        setCounter(0);
+        const collection = document.getElementsByClassName("projects-text");
+        for (let i = 0; i < collection.length; i++) {
+            collection[i].style.textDecoration = "none";
+        }
+        event.currentTarget.style.textDecoration ='underline';
+
         setProject(Projects[event.currentTarget.id])
+        prev = event.currentTarget;
     }
 
     function handleLeave(){
@@ -39,7 +48,7 @@ function MyWork() {
             <h2 className='projects-text' id={4}  onClick={handleClick} >STUPID<br/>F**KING BIRD</h2>
             </div>
             <div className='info' style={imageStyle}> 
-            <ProjectInfo project={project} setImage={setImage} handleLeave={handleLeave}/>
+            <ProjectInfo project={project} counter={counter} setCounter={setCounter} setImage={setImage} handleLeave={handleLeave}/>
             </div>
         </div>        
     )

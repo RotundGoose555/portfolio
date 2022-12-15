@@ -83,6 +83,8 @@
     border-color: lightgreen;
     cursor: pointer;
 }
+
+
 .info-button:disabled{
     color:transparent;
     cursor:default;
@@ -107,10 +109,11 @@
 }
 
 .projects-text:hover{
-    text-decoration: underline;
+    text-decoration: underline !important;
     cursor:pointer;
     color: lightgreen;
 }
+
 
 
 .hover{
