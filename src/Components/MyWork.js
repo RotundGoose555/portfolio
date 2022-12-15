@@ -7,7 +7,6 @@ function MyWork() {
     const [project, setProject] = useState(Projects[0])
     const [counter, setCounter] = useState(0);
     const [url, setUrl] = useState('')
-    var prev = null;
 
     const handleClick = event =>{
         setCounter(0);
@@ -18,7 +17,6 @@ function MyWork() {
         event.currentTarget.style.textDecoration ='underline';
 
         setProject(Projects[event.currentTarget.id])
-        prev = event.currentTarget;
     }
 
     function handleLeave(){
