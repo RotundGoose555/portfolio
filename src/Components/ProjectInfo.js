@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react';
+import {useEffect} from 'react';
 import '../CSS/Body.css';
 function ProjectInfo(props) {
 
